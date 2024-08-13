@@ -137,33 +137,24 @@ evaluation metrics used are,
 
 * Precision: It is the ratio of correctly predicted Attacks to all the samples predicted
 as Attacks.
-Precision= TP
-TP+FP
+Precision= TP/TP+FP
 * Recall: It is a ratio of all samples correctly classified as Attacks to all the samples
 that are Attacks. It is also called a Detection Rate.
-Recall=Detection Rate= TP
-TP+FP
+Recall=Detection Rate= TP/TP+FP
 * False alarm rate: It is also called the false positive rate and is defined as the ratio
 of wrongly predicted Attack samples to all the Normal samples.
-False Alarm Rate =
-FP
-FP + TN
+False Alarm Rate =FP/FP + TN
 * True negative rate: It is defined as the ratio of the number of correctly classified
 Normal samples to all the Normal samples.
-True Negative Rate =
-TN
-TN+FP
+True Negative Rate =TN/TN+FP
 * Accuracy: It is the ratio of correctly classified instances to the total number of
 instances. It is also called Detection Accuracy and is a useful performance
 measure only when a dataset is balanced.
-Accuracy =
-TP+TN
-TP+TN+FP+FN
+Accuracy =TP+TN/TP+TN+FP+FN
 * F-Measure: It is defined as the harmonic mean of the Precision and Recall. In
 other words, it is a statistical technique for examining the accuracy of a system by
 considering both the precision and recall of the system.
-F Measure = 2 (Precision × Recall
-Precision + Recall)
+F Measure = 2 (Precision × Recall)/(Precision + Recall)
 
 CONCLUSION
 Intrusion detection and prevention are essential to current and future networks and
