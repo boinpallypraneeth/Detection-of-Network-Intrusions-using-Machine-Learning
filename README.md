@@ -68,12 +68,13 @@ greater the effectiveness of the system. The dataset can be collected by numerou
 means, such as
 1) sanitized dataset,
 2) simulated dataset,
-3) testbed dataset, and
+3) testbed dataset,
 4) standard dataset.
+
 Additionally, different types of traffic are required to model various network attacks,
 which is complex and costly. To overcome these difficulties, the NSL–KDD dataset is
 used to validate the proposed system for intrusion detection.
-34
+
 Pre-Processing:
 The classifier is unable to process the raw dataset because of some of its symbolic
 features. Thus, pre-processing is essential, in which non-numeric or symbolic features
@@ -82,6 +83,8 @@ detection. However, this process generates overhead including more training time
 classifier’s architecture becomes complex and wastes memory and computing
 resources. Therefore, the non-numeric features are excluded from the raw dataset for
 improved performance of intrusion detection systems.
+
+
 Classification:
 The present proposed method is based mainly on two main phases, the first phase is to
 detect and pre-process the eye images using the image processing technique and the
@@ -94,6 +97,8 @@ dimensional space to optimally separate the given data into their respective att
 classes. Therefore, kernel RBF is particularly effective in separating sets of data that
 share complex boundaries. In our study, all the simulations have been conducted using
 the freely available Lib SVM package.
+
+
 Random Forest
 RFs are ensemble classifiers, which are used for classification and regression analysis
 of the intrusion detection data. RF works by creating various decision trees in the
@@ -101,7 +106,8 @@ training phase and output class labels that have the majority vote. RF attains h
 classification accuracy and can handle outliers and noise in the data. RF is used in this
 work because it is less susceptible to over-fitting and it has previously shown good
 classification results.
-35
+
+
 Extreme Learning Machine:
 ELM is another name for single or multiple hidden layer feed-forward neural networks.
 ELM can be used to solve various classification, clustering, regression, and feature
@@ -111,6 +117,8 @@ adjustment of the input and hidden layer weights are very computationally expens
 and time-consuming because it requires multiple rounds to converge. To overcome this
 problem, Huang et al. proposed an SLFN by arbitrarily selecting input weights and
 hidden layer biases to minimize the training time.
+
+
 EVALUATION METRICS
 This section explains the most commonly used evaluation metrics for measuring the
 performance of ML and methods for IDS. All the evaluation metrics are based on the
@@ -126,7 +134,7 @@ instances.
 The diagonal of the confusion matrix denotes the correct predictions while nondiagonal
 elements are the wrong predictions of a certain classifier. Further, the different
 evaluation metrics used are,
-36
+
 * Precision: It is the ratio of correctly predicted Attacks to all the samples predicted
 as Attacks.
 Precision= TP
@@ -155,7 +163,7 @@ TP+TN+FP+FN
 other words, it is a statistical technique for examining the accuracy of a system by
 considering both the precision and recall of the system.
 F Measure = 2 (Precision × Recall
-Precision + Recall
+Precision + Recall)
 
 CONCLUSION
 Intrusion detection and prevention are essential to current and future networks and
